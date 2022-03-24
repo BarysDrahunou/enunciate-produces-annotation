@@ -1,0 +1,19 @@
+<enunciate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="http://enunciate.webcohesion.com/schemas/enunciate-2.13.0.xsd">
+    <title>Test project</title>
+    <description>
+        <![CDATA[
+            <h1>Test project documentation</h1>
+        ]]>
+    </description>
+
+    <modules disabledByDefault="true">
+        <!-- provider modules -->
+        <jaxrs disabled="false"/>
+        <jackson disabled="false"/>
+        <spring-web disabled="false"/>
+        <!-- non provider modules -->
+        <docs disabled="false"/>
+        <swagger disabled="false"/>
+    </modules>
+</enunciate>

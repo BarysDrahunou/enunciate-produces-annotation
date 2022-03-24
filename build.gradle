@@ -1,0 +1,26 @@
+plugins {
+	id 'org.springframework.boot' version '2.6.4'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+	id 'com.webcohesion.enunciate' version "2.14.0"
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web:2.6.4'
+	implementation 'javax.ws.rs:javax.ws.rs-api:2.1.1'
+}
+
+tasks {
+	enunciate {
+		def docsPath = "${project.buildDir}/enunciate"
+		setConfigFileName("enunciate.xml")
+	}
+}
